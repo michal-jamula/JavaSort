@@ -1,28 +1,37 @@
 package main.java;
 
 
+import java.util.Arrays;
+
 /**
  Bubble sort
- Best and Worst time complexity: O(n) - O(n^2)
+ Time complexity: O(n^2)
  Space complexity: O(1)
+ This is a stable sort (the order of duplicates will be preserved)
  */
 public class BubbleSort {
 
     public static void sort (int[] numbers) {
-        //first loop
-        for (int first = 1; first < numbers.length; first++) {
-            //inner loop
-            for (int second = 0; second < first; second++) {
+        System.out.println("\nBefore bubble sort: " + Arrays.toString(numbers));
 
-                //Swap numbers if needed
-                if (numbers[first] < numbers[second]) {
-                    int temp = numbers[first];
-                    numbers[first] = numbers[second];
-                    numbers[second] = temp;
+        for (int lastUnsortedIndex = numbers.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
+            for (int i = 0; i < lastUnsortedIndex; i++) {
+
+                if (numbers[i] > numbers[i + 1]) {
+                    swap(numbers, i, i+1);
                 }
             }
         }
+        System.out.println("After bubble sort: " + Arrays.toString(numbers));
+    }
 
+    private static void swap (int[] array, int i, int j) {
+        if (i == j)
+            return;
+
+        int temp = array [i];
+        array[i] = array[j];
+        array[j] = temp;
     }
 
 }
