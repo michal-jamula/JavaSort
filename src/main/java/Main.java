@@ -14,7 +14,8 @@ public class Main {
         };
 
         for(int[] array : intArrays) {
-            BubbleSort.sort(array);
+//            BubbleSort.sort(array);
+            SelectionSort.sort(array);
         }
 
     }
