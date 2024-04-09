@@ -1,5 +1,7 @@
 package main.java;
 
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -10,12 +12,20 @@ public class Main {
                 {1,1,1,1,1,1,1,2,1,1,1},
                 {2,2,2,2},
                 {1,2},
-                {2,1}
+                {2,1},
+                //new Random().ints(1000000).toArray()
         };
 
         for(int[] array : intArrays) {
+            long start = System.nanoTime();
 //            BubbleSort.sort(array);
-            SelectionSort.sort(array);
+//            SelectionSort.sort(array);
+//            InsertionSort.sort(array);
+            ShellSort.sort(array);
+
+
+            System.out.println("time taken: " + (System.nanoTime() - start));
+
         }
 
     }

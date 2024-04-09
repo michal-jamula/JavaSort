@@ -3,3 +3,5 @@ Basic sorting algorithms. Used to sort Integers.
 Current sorting algorithms:
 - Bubble Sort
 - Selection Sort
+- Insertion Sort
+- Shell Sort (with the Knuth sequence)
