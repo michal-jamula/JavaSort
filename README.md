@@ -6,3 +6,4 @@ Current sorting algorithms:
 - Insertion Sort
 - Shell Sort (with the Knuth sequence)
 - Merge Sort
+- Quick Sort

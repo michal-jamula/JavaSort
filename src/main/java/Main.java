@@ -13,7 +13,7 @@ public class Main {
                 {2,2,2,2},
                 {1,2},
                 {2,1},
-//                new Random().ints(50000000).toArray()
+                new Random().ints(50000000).toArray()
         };
 
         for(int[] array : intArrays) {
@@ -22,7 +22,8 @@ public class Main {
 //            SelectionSort.sort(array);
 //            InsertionSort.sort(array);
 //            ShellSort.sort(array);
-            MergeSort.sort(array);
+//            MergeSort.sort(array);
+            QuickSort.sort(array);
 
 
             System.out.println("time taken: " + (System.nanoTime() - start));
