@@ -5,3 +5,4 @@ Current sorting algorithms:
 - Selection Sort
 - Insertion Sort
 - Shell Sort (with the Knuth sequence)
+- Merge Sort
