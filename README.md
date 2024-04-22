@@ -7,3 +7,6 @@ Current sorting algorithms:
 - Shell Sort (with the Knuth sequence)
 - Merge Sort
 - Quick Sort
+- Counting Sort
+- Stable Counting Sort
+- Radix Sort (with SCS)
